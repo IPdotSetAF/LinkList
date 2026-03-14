@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Link List",
+  "name": "LinkList",
   "version": "1.0",
   "description": "Extracts all URLs from selected text and copies them to clipboard",
   "permissions": [
@@ -11,10 +11,5 @@
   ],
   "background": {
     "service_worker": "linkList.js"
-  },
-  "icons": {
-    "16": "icon16.png",
-    "48": "icon48.png",
-    "128": "icon128.png"
   }
 }
