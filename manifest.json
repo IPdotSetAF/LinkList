@@ -11,5 +11,16 @@
   ],
   "background": {
     "service_worker": "linkList.js"
-  }
+  },
+  "icons": {
+    "16": "icons/LinkList16.png",
+    "48": "icons/LinkList48.png",
+    "128": "icons/LinkList128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["icons/LinkList.svg"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }

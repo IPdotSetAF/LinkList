@@ -1,4 +1,5 @@
-# LinkList 
+
+# <img src='./icons/LinkList.svg' height=25/> LinkList 
 A google chrome extension for extracting links from websites.
 
 ## Features
