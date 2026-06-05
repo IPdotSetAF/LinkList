@@ -1,8 +1,8 @@
 function showNotification(message) {
     const toast = document.createElement("div");
-    
+
     const img = document.createElement("img");
-    img.src = chrome.runtime.getURL("icons/LinkList.svg"); 
+    img.src = chrome.runtime.getURL("icons/LinkList.svg");
     img.style.width = "20px";  // Adjust size as needed
     img.style.height = "20px";
     img.style.verticalAlign = "middle";
@@ -27,12 +27,12 @@ function showNotification(message) {
     toast.style.fontFamily = "sans-serif";
     toast.style.fontSize = "14px";
     toast.style.boxShadow = "0 2px 5px rgba(0,0,0,0.2)";
-    
+
     toast.style.display = "flex";
     toast.style.alignItems = "center";
 
     document.body.appendChild(toast);
-    
+
     setTimeout(() => {
         toast.style.opacity = "0";
         toast.style.transition = "opacity 0.5s";

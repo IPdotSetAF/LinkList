@@ -14,25 +14,25 @@ chrome.runtime.onInstalled.addListener(() => {
 chrome.contextMenus.onClicked.addListener((info, tab) => {
     chrome.scripting.executeScript({
         target: { tabId: tab.id },
-        files: ["notification.js", "linkList.js"]
+        files: ["linkList-notification.js", "linkList.js"]
+    }).then(() => {
+        switch (info.menuItemId) {
+            case "extract-selection": {
+                chrome.scripting.executeScript({
+                    target: { tabId: tab.id },
+                    func: extractFromSelection
+                });
+                break;
+            }
+            case "extract-page": {
+                chrome.scripting.executeScript({
+                    target: { tabId: tab.id },
+                    func: extractFromPage
+                });
+                break;
+            }
+        }
     });
-
-    switch (info.menuItemId) {
-        case "extract-selection": {
-            chrome.scripting.executeScript({
-                target: { tabId: tab.id },
-                func: extractFromSelection
-            });
-            break;
-        }
-        case "extract-page": {
-            chrome.scripting.executeScript({
-                target: { tabId: tab.id },
-                func: extractFromPage
-            });
-            break;
-        }
-    }
 });
 
 function extractFromSelection() {
