@@ -10,7 +10,7 @@
     "clipboardWrite"
   ],
   "background": {
-    "service_worker": "linkList.js"
+    "service_worker": "linkList-handler.js"
   },
   "action": {
     "default_popup": "popup.html",
