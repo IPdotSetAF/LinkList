@@ -1,3 +1,10 @@
+<p align=left>
+   <img src="https://img.shields.io/github/v/release/IPdotSetAF/LinkList"/>
+   <img src="https://img.shields.io/github/release-date/IPdotSetAF/LinkList"/>
+   <img src="https://img.shields.io/github/last-commit/IPdotSetAF/LinkList"/>
+   <img src="https://img.shields.io/github/license/IPdotSetAF/LinkList"/>
+   <img src="https://img.shields.io/github/downloads/IPdotSetAF/LinkList/total"/>
+</p>
 
 # <img src='./icons/LinkList.svg' height=25/> LinkList 
 A google chrome extension for extracting links from websites.
@@ -8,7 +15,15 @@ A google chrome extension for extracting links from websites.
 - Copies links to your clipboard(a link on each line)(examaple: you can use it with IDM, etc ...)  
 
 ## Installation
-You can install this extension from chrome store.
+This extension is not distributed on the Chrome Web Store. To install from source or the latest GitHub release:
+
+1. Open the releases page: https://github.com/IPdotSetAF/LinkList/releases
+2. Download the latest release ZIP (or the source code) and extract it to a folder on your computer.
+3. Open Google Chrome and navigate to `chrome://extensions/`.
+4. Enable **Developer mode** (top right).
+5. Click **Load unpacked** and select the extracted `LinkList` folder.
+
+After loading, the extension icon will appear in the browser bar.
 
 ## Usage
 - Extracting all links in a webpage:
