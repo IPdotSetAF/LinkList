@@ -1,0 +1,98 @@
+:root {
+    --brand: #29abe2;
+    --bg-light: rgba(247, 248, 250, 0.9);
+    --bg-dark: rgba(24, 24, 24, 0.9);
+    --text-dark: #111;
+    --text-light: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif
+}
+
+body {
+    margin: 0;
+    width: 260px
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 12px;
+    background: var(--bg-light);
+}
+
+.logo {
+    width: 36px;
+    height: 36px
+}
+
+h1 {
+    font-size: 16px;
+    margin: 0
+}
+
+.title-row {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.version-label {
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%
+}
+
+.btn {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 999px;
+    border: 1px solid var(--brand);
+    background: transparent;
+    color: var(--brand);
+    cursor: pointer
+}
+
+.btn:hover {
+    background: rgba(41, 171, 226, 0.08)
+}
+
+.update-area {
+    width: 100%;
+    margin-top: 8px;
+    text-align: center;
+    font-size: 13px
+}
+
+.update-link {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--brand);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.02));
+    color: var(--brand);
+    cursor: pointer;
+    text-decoration: none
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: var(--text-light)
+    }
+
+    .container {
+        background: var(--bg-dark);
+        border: 1px solid rgba(255, 255, 255, 0.04);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.36)
+    }
+}
